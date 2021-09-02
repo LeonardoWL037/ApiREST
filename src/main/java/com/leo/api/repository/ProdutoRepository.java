@@ -8,5 +8,8 @@ import com.leo.api.models.Produto;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+	
+	
+	Produto findById(long id);
 
 }
