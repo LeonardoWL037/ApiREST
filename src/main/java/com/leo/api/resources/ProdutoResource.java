@@ -40,9 +40,9 @@ public class ProdutoResource {
 	}
 	
 	
-	@DeleteMapping(value = "/{id}")
-	public void deletaProduto(@PathVariable Integer id) {
-		produtorepository.delete(id);
+	@DeleteMapping("/produtos")
+	public void deletaProduto(@RequestBody Produto produto) {
+		produtorepository.delete(produto);
 	}
 	
 	
