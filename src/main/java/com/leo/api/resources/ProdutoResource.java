@@ -34,19 +34,19 @@ public class ProdutoResource {
 	}
 	
 	
-	@PostMapping("/produto")
+	@PostMapping("/produtos")
 	public Produto salvaProduto(@RequestBody Produto produto) {
 		return produtorepository.save(produto);
 	}
 	
 	
-	@DeleteMapping("/produto")
+	@DeleteMapping("/produtos")
 	public void deletaProduto(@RequestBody Produto produto) {
 		produtorepository.delete(produto);
 	}
 	
 	
-	@PutMapping("/produto")
+	@PutMapping("/produtos")
 	public Produto atualizaProduto(@RequestBody Produto produto) {
 		return produtorepository.save(produto);
 	}
