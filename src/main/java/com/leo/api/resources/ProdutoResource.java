@@ -40,7 +40,7 @@ public class ProdutoResource {
 	}
 	
 	
-	@DeleteMapping("/produtos")
+	@DeleteMapping("/produtos/{id}")
 	public void deletaProduto(@RequestBody Produto produto) {
 		produtorepository.delete(produto);
 	}
